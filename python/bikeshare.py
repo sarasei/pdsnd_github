@@ -24,7 +24,7 @@ def get_filters():
         if city in CITY_DATA.keys():
             break
         else:
-            print('Please, write a valid city!') 
+            print('Ooops! it is not a valid city, please enter either .chicago, new york city, or washington')
         
  
         
@@ -44,7 +44,7 @@ def get_filters():
         print("Sorry, I didn't catch that. Try again.")
         continue
       else:
-        break          
+        break
               
     print('-'*40)
     return city, month, day
@@ -227,4 +227,4 @@ def main():
 
 
 if __name__ == "__main__":
-	main()
+    main()
