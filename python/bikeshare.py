@@ -162,11 +162,14 @@ def user_stats(df):
     start_time = time.time()
 
     # TO DO: Display counts of user types
-    user_stats = df['User Type'].value_counts()
-    print('\nUser Types: ', user_stats)
+    try:
+       user_stats = df['User Type'].value_counts()
+       print('\nUser Types: ', user_stats)
+    except KeyError:
+        print("\nuser stats:\ndata not available.")
 
 
-    # TO DO: Display counts of gender    
+     # TO DO: Display counts of gender
     try:
         gender_counts = df['Gender'].value_counts()
         print('\ngender type:', gender_counts)
