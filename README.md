@@ -10,9 +10,7 @@ Explore US Bikeshare Database
 Explore the data related to bike share systems in the US, by Importing the data and answer questions about it by computing descriptive statistics, And Write a script that takes in raw input to create an interactive experience in the terminal to present these statistics
 
 ### Files used
-chicago.csv
-new_york_city.csv
-washington.csv
+*.csv
 
 ### Credits
 python 3.10.8 documentation
